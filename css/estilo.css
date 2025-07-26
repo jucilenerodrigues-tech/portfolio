@@ -1,22 +1,82 @@
+
+/* Definir cores tema dark */
+:root,
+:root[data-theme="dark"] {
+    --cor-fundo:#1F3c2b;
+    --cor-texto:#f4f0e6;
+    --cor-icone: #c2a14c ;
+    --cor-link: #385940;
+    --cor-hover:#c2a14c;
+    --cor-borda:#c2a14c ;
+}
+
+/* Definir cores tema light */
+:root[data-theme="light"] {
+    --cor-fundo:##f4f0e6;
+    --cor-texto:#1f3c2b;
+     --cor-icone: #1f3c2b ;
+    --cor-link:#1f3c2b ;
+    --cor-hover: #c2a14c;
+    --cor-borda: #c2a14c;
+}
+
+
 * {
     margin: 0; 
     padding: 0;
+    box-sizing: border-box; /* controla o conteúdo para não transbordar a  caixa de visualização */
     
 }
 body{
-    background: #b9b9b9 ;
-    color: #2e3a2ede;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
     font-family: ;
 }
-a {
-    text-decoration: none;
-    color: #2e3a2ede;
-}
-#header {
+
+#header { /* elemento ID é a # */
     display: flex; /* utilizado para a pág se adaptar a qualquer tamanho de tela */
     flex-wrap: row wrap ; /* utilizado para colocar o conteudo em linha ou, se precisar,possibilitar a quebra de linhas */
     justify-content: space-between ; /* está sendo utilizado para alinhamento do texto horizontal do header */
     align-items: center; /* está sendo utilizado para alinhamento do texto vertical do header */
-    background: #d9dad9de; /* cor de fundo do reader */
+    width: 100%;
+    background: var(--cor-fundo); /* cor de fundo do reader */
     padding: 1rem 3rem; /* rem é unidade de medida e equivale a 16pixels */
+    /* z-index: ; */
+    /* position: ; */
+    border-bottom: 2px     solid var(--cor-borda); /* inlui a linha abaixo do menu */
+    /* background: ; */
+}
+a {
+    text-decoration: none;
+    color:var(--cor-texto);
+}
+
+ul {
+list-style: none;
+}
+.menu-desktop  {
+/* display: none; */
+
+}
+.menu {
+    display: flex ;
+    gap: 1rem;
+    align-items: center;
+}
+
+.menu-link.active .menu-texto, 
+.menu-link:hover .menu-texto {
+
+    color: var(--cor-hover);
+}
+
+.menu-texto {
+    color: var(--cor-texto);
+    text-transform: uppercase;
+    
+}
+#toggleTheme{
+    cursor: pointer;
+    color: var(--cor-icone);
+    font-size: 1.2rem;
 }
