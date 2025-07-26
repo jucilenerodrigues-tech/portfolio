@@ -58,7 +58,7 @@ ul {
 list-style: none;
 }
 .menu-desktop  {
-/* display: none; */
+ display: none; 
 }
 .menu {
     display: flex ;
@@ -88,3 +88,22 @@ list-style: none;
     color: var(--cor-icone);
     font-size: 1.2rem;
 }
+
+.header-toggle {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+
+}
+/* medidas responsivas */
+
+@media (min-width: 768px) { /* Resolução de 768 até o infinito */
+   .menu-desktop   {
+    display:flex;
+    min-width: 30%;
+       }
+    .header-toggle{
+        min-width: 30%;
+    }
+    }
+
