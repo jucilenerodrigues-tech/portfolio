@@ -3,3 +3,20 @@
     padding: 0;
     
 }
+body{
+    background: #b9b9b9 ;
+    color: #2e3a2ede;
+    font-family: ;
+}
+a {
+    text-decoration: none;
+    color: #2e3a2ede;
+}
+#header {
+    display: flex; /* utilizado para a pág se adaptar a qualquer tamanho de tela */
+    flex-wrap: row wrap ; /* utilizado para colocar o conteudo em linha ou, se precisar,possibilitar a quebra de linhas */
+    justify-content: space-between ; /* está sendo utilizado para alinhamento do texto horizontal do header */
+    align-items: center; /* está sendo utilizado para alinhamento do texto vertical do header */
+    background: #d9dad9de; /* cor de fundo do reader */
+    padding: 1rem 3rem; /* rem é unidade de medida e equivale a 16pixels */
+}
