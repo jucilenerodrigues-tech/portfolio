@@ -2,22 +2,24 @@
 /* Definir cores tema dark */
 :root,
 :root[data-theme="dark"] {
-    --cor-fundo:#1F3c2b;
+    --cor-fundo:#000000;
     --cor-texto:#f4f0e6;
     --cor-icone: #c2a14c ;
-    --cor-link: #385940;
-    --cor-hover:#c2a14c;
+    --cor-link: #fff;
+    --cor-hover: #c2a14c;
     --cor-borda:#c2a14c ;
+    --cor-header:#c9c4c4;
 }
 
 /* Definir cores tema light */
 :root[data-theme="light"] {
     --cor-fundo:##f4f0e6;
     --cor-texto:#1f3c2b;
-     --cor-icone: #1f3c2b ;
+     --cor-icone: black ;
     --cor-link:#1f3c2b ;
     --cor-hover: #c2a14c;
     --cor-borda: #c2a14c;
+    --cor-header:#c9c4c4;
 }
 
 html[data-theme="light"] .logo  {
@@ -42,12 +44,12 @@ body{
     justify-content: space-between ; /* está sendo utilizado para alinhamento do texto horizontal do header */
     align-items: center; /* está sendo utilizado para alinhamento do texto vertical do header */
     width: 100%;
-    background: var(--cor-fundo); /* cor de fundo do reader */
+    background: var(--cor-header); /* cor de fundo do reader */
     padding: 1rem 3rem; /* rem é unidade de medida e equivale a 16pixels */
-    /* z-index: ; */
-    /* position: ; */
+    z-index: 100;
+    position: fixed;
     border-bottom: 2px     solid var(--cor-borda); /* inlui a linha abaixo do menu */
-    /* background: ; */
+    background: var(--cor-fundo);
 }
 a {
     text-decoration: none;
@@ -99,9 +101,58 @@ justify-content: flex-end;
 }
 /* menu mobile */
 #menuMobile{
-    margin-left: 1rem; /* voltar aqui */
+    margin-left: 1rem;
+  
 }
-/* medidas responsivas */
+
+.btn-menu-mobile{
+    background: transparent;
+    color: var(--cor-borda);
+    border: none;
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+/* Nebu Mobile (estilo e animação) */
+
+.menu-mobile{/* NAV */
+    position: fixed;
+    top: 0;
+    right:0 ;
+    background:var(--cor-header) ;
+    z-index: 50;
+    transform: translateX(100%);
+    display: flex;
+    flex-direction: column; /* voltar */
+    padding: 6rem;
+    border-left: 1px solid;
+    height: 20vh; /* VH=viewport height e VW= viewport widht*/
+    width: 20%; 
+    transition: transform 0.3s ease-in-out;
+
+        }
+.menu-mobile.active{
+    transform: translate(0%);
+}
+.menu-mobile .menu-lista{
+    width: 100%;
+    text-align: center;    
+    padding-top: 0.5rem;
+}
+
+.menu-mobile .menu-link{
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.1rem 0;
+   
+}
+
+        /* medidas responsivas */
 
 /*  */
 
@@ -113,6 +164,9 @@ justify-content: flex-end;
        }
     .header-toggle{
         min-width: 30%;
+    }
+    .btn-menu-mobile{
+        display: none;
     }
     }
 
