@@ -75,6 +75,8 @@ list-style: none;
 .menu-texto {
     color: var(--cor-texto);
     text-transform: uppercase;
+    font-size: .75rem ; /* tamanho da fonte */
+    font-weight: 600;
  
 }
 
@@ -95,7 +97,14 @@ align-items: center;
 justify-content: flex-end;
 
 }
+/* menu mobile */
+#menuMobile{
+    margin-left: 1rem; /* voltar aqui */
+}
 /* medidas responsivas */
+
+/*  */
+
 
 @media (min-width: 768px) { /* Resolução de 768 até o infinito */
    .menu-desktop   {
