@@ -99,6 +99,16 @@ ul {
     color: var(--cor-hover);
 }
 
+.social-icon{
+    color: var(--cor-texto);
+    font-size: 1.5rem;
+
+}
+
+.menu-link:hover .social-icon {
+    color: var(--cor-hover);
+}
+
 .logo {
     width: 3.25rem;
     height: 1.89rem;
@@ -200,3 +210,8 @@ ul {
     }
 
 }
+
+
+
+
+
