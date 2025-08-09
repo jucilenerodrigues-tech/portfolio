@@ -1,34 +1,20 @@
 /* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=DM+Serif+Display:ital@0;1&family=Major+Mono+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-/* font-family: "Castoro Titling", serif;
-  font-weight: 400;
-  font-style: normal; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap');
+/* Fontes Utilizadas
+Fonte Inter :
+    font-family: "Inter", sans-serif;
 
-/* font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal; */
+League Spartan:
+    font-family: "League Spartan", sans-serif;
 
-/*  font-family: "Major Mono Display", monospace;
-  font-weight: 400;
-  font-style: normal; */
-
-/* font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-style: normal; */
-
-/* font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-style: italic; */
-
+*/
 :root {
-  --fonte-menu: "DM Serif Display", serif;
-  --fonte-corpo: "DM Serif Display", serif;
-  --fonte-titulo: "Major Mono Display", monospace;
-  --fonte-h1: "Castoro Titling", serif;
-  --fonte-h2: "DM Serif Display", serif;
+    --fonte-menu: "Inter", sans-serif;
+    --fonte-corpo: "Inter", sans-serif;
+    --fonte-titulo: "League Spartan", sans-serif;
 }
+
 /* Definir cores tema Dark */
 :root,
 :root[data-theme="dark"] {
@@ -46,6 +32,7 @@
 
   --icone-menu-mobile: #e9e9e9;
   --cor-titulo: #fff;
+  --sombra:rgb(216, 214, 214);
 }
 
 /* Definir cores tema Light */
@@ -64,6 +51,7 @@
 
   --icone-menu-mobile: #0b0b0f;
   --cor-titulo: #000;
+  --sombra:rgb(216, 214, 214);
 }
 
 html[data-theme="light"] .logo {
@@ -99,7 +87,7 @@ h1 {
 h1,
 h2,
 h3 {
-  font-family: var("DM Serif Display", serif);
+  font-family: var(--fonte-titulo);
   text-transform: uppercase;
   color: var(--cor-titulo);
   font-weight: 200;
@@ -107,8 +95,8 @@ h3 {
 
 strong {
   font-weight: 400;
-  color: #ffa927;
   font-style: normal;
+
 }
 
 p,
@@ -306,6 +294,8 @@ p {
 .video iframe {
   width: 95%;
   aspect-ratio: 16/9;
+  box-shadow: 0px 15px 15px 2px var(--sombra); /* sombra do vídeo, que podeser usada como borda e/ou parece ambilight da tv */
+
 }
 
 #home,
@@ -313,6 +303,19 @@ p {
 .sobre,
 .contato {
   padding: 2.5rem 1rem;
+}
+
+.conhecimento{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(90deg,rgba(42,123,155,1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    padding: 6.25rem 1rem 2rem ;
+    margin-top: -5.5rem;
+}
+.conhecimento h2{
+    font-size: 2rem;
 }
 
 /* Medidas Responsivas */
