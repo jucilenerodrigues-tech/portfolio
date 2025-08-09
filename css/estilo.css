@@ -1,3 +1,37 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=DM+Serif+Display:ital@0;1&family=Major+Mono+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+  /* font-family: "Castoro Titling", serif;
+  font-weight: 400;
+  font-style: normal; */
+
+  /* font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+  /*  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal; */
+
+   /* font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal; */
+
+  /* font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic; */
+
+:root{
+--fonte-menu:"DM Serif Display", serif;
+--fonte-corpo:"DM Serif Display", serif;
+--fonte-titulo:"Major Mono Display", monospace;
+--fonte-h1:"Castoro Titling", serif ;
+--fonte-h2:"DM Serif Display", serif ;
+
+
+
+}
 /* Definir cores tema Dark */
 :root,
 :root[data-theme="dark"] {
@@ -63,6 +97,11 @@ ul {
     list-style: none;
 }
 
+h1{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
 #header {
     display: flex;
     flex-wrap: row wrap;
@@ -92,6 +131,7 @@ ul {
     font-size: .75rem;
     /* tamanho da Fonte */
     font-weight: 600;
+    font-family: var(--fonte-menu);
 }
 
 .menu-link.active .menu-texto,
@@ -182,7 +222,32 @@ ul {
     padding: 0.5rem 0;
 }
 
+/* flexbox */
+#home{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap:1.5em;
+}
+/* .main-content .video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+} */
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video iframe{
+    width: 50%;
+    aspect-ratio: 16/9;
+}
 
 /* Medidas Responsivas */
 
@@ -205,7 +270,7 @@ ul {
 
     #home{
         padding-top: 6rem;
-        
+
 
     }
 

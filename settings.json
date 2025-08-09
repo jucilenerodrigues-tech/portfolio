@@ -1,0 +1,17 @@
+{
+
+  "editor.glyphMargin": false,
+  "editor.wordWrap": "on",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.formatOnSave": true,
+
+  //comentario aparencia e interface
+  "editor.fontSize":24,
+  "workbench.iconTheme": "vscode-icons",
+
+
+
+}
