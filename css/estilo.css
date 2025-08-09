@@ -1,6 +1,6 @@
 /* Google Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap");
 /* Fontes Utilizadas
 Fonte Inter :
     font-family: "Inter", sans-serif;
@@ -10,9 +10,9 @@ League Spartan:
 
 */
 :root {
-    --fonte-menu: "Inter", sans-serif;
-    --fonte-corpo: "Inter", sans-serif;
-    --fonte-titulo: "League Spartan", sans-serif;
+  --fonte-menu: "Inter", sans-serif;
+  --fonte-corpo: "Inter", sans-serif;
+  --fonte-titulo: "League Spartan", sans-serif;
 }
 
 /* Definir cores tema Dark */
@@ -32,7 +32,8 @@ League Spartan:
 
   --icone-menu-mobile: #e9e9e9;
   --cor-titulo: #fff;
-  --sombra:rgb(216, 214, 214);
+  --sombra: rgb(216, 214, 214);
+  --scrollbar: #ffa927;
 }
 
 /* Definir cores tema Light */
@@ -51,7 +52,8 @@ League Spartan:
 
   --icone-menu-mobile: #0b0b0f;
   --cor-titulo: #000;
-  --sombra:rgb(216, 214, 214);
+  --sombra: rgb(216, 214, 214);
+  --scrollbar: #12a3f7;
 }
 
 html[data-theme="light"] .logo {
@@ -62,6 +64,8 @@ html[data-theme="light"] .logo {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar) transparent;
 }
 
 body {
@@ -84,6 +88,12 @@ h1 {
   font-weight: 200; /* espessura da fonte */
   font-style: italic;
 }
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.4rem;
+}
 h1,
 h2,
 h3 {
@@ -96,7 +106,6 @@ h3 {
 strong {
   font-weight: 400;
   font-style: normal;
-
 }
 
 p,
@@ -269,15 +278,15 @@ p {
 }
 .btn span,
 .btn i {
-    color: var(--cor-titulo);
-    text-transform: uppercase;
+  color: var(--cor-titulo);
+  text-transform: uppercase;
 }
 
 .btn:hover span,
-.btn:hover i{
-    color: var(--cor-fundo);
-    transition: ease-in-out 0.2s;
-    font-weight: bold;
+.btn:hover i {
+  color: var(--cor-fundo);
+  transition: ease-in-out 0.2s;
+  font-weight: bold;
 }
 
 /* .main-content .video{
@@ -295,7 +304,6 @@ p {
   width: 95%;
   aspect-ratio: 16/9;
   box-shadow: 0px 15px 15px 2px var(--sombra); /* sombra do vídeo, que podeser usada como borda e/ou parece ambilight da tv */
-
 }
 
 #home,
@@ -305,17 +313,24 @@ p {
   padding: 2.5rem 1rem;
 }
 
-.conhecimento{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background: linear-gradient(90deg,rgba(42,123,155,1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-    padding: 6.25rem 1rem 2rem ;
-    margin-top: -5.5rem;
+.conhecimento {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(/* linear-gradient utilizado para colocar um fundo degradê */
+  90deg,
+  rgba(51, 51, 51, 1) 0%,
+  rgba(128, 128, 128, 1) 50%,
+  rgba(204, 204, 204, 1) 100%
+);
+   padding: 6.25rem 1rem 2rem;
+  margin-top: -5.5rem;
 }
-.conhecimento h2{
-    font-size: 2rem;
+.conhecimento h2 {
+  font-size: 2rem;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 /* Medidas Responsivas */
@@ -366,6 +381,10 @@ p {
   h1 {
     font-size: 5rem;
   }
+
+  h2 {
+    font-size: 3rem;
+  }
 }
 @media (min-width: 1200px) {
   #home {
@@ -374,9 +393,17 @@ p {
   .main-content .btn {
     width: auto;
   }
+
+  h2 {
+    font-size: 4rem;
+  }
 }
 @media (min-width: 1400px) {
   h1 {
     font-size: 6.25rem;
+  }
+
+  h2 {
+    font-size: 4.5rem;
   }
 }
