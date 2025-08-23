@@ -330,7 +330,7 @@ i {
 }
 
 .video iframe {
-  width: 90%;
+  width: 80%;
   aspect-ratio: 16/9;
   box-shadow: 0px 15px 15px 2px var(--sombra);
   /* sombra do vídeo, que podeser usada como borda e/ou parece ambilight da tv */
@@ -451,9 +451,9 @@ i {
   font-size: 1.25rem;
 }
 
-.card-item i:hover {
-  
-}
+/* .card-item i:hover {
+
+} */
 
 
 
@@ -476,26 +476,65 @@ i {
 
 .sobre-logo {
   /* tag img = imagem do avatar */
-  width: 100%;
+  width: 80%;
   border-radius: 50rem;
   pointer-events: none;
   /* dificulta ações do usuario pegar a imagem */
   border: 1rem solid var(--cor-icone);
 }
 
-.sobre-description {}
+.sobre-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+}
 
-.sobre-icones {}
+/* .sobre h2 {
+  text-align: start; opcional pode ser start, center, end - muda a posição
+} */
 
-.sobre-icones i {}
+
+.sobre-description p {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.sobre-icones {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.sobre-icones i {
+  font-size: 1.25rem;
+}
+
+.sobre-icones span {
+  font-family: var(--fonte-corpo);
+}
+
+/* .sobre-icones i:hover {
+  filter: brightness(50%);
+} */
 
 .sobre-content2 .col1,
 .sobre-content2 .col2 {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  gap: 5rem;
+  gap: 2rem;
 }
+
+.sobre-content2 .col1 .row1,
+.sobre-content2 .col1 .row2 {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: .5rem;
+}
+
+
 
 /* Medidas Responsivas */
 
@@ -562,7 +601,7 @@ i {
   }
 
   .card-cover {
-    width: 55%;
+    width: 45%;
   }
 
   .projeto-card.card-reverse {
@@ -583,6 +622,16 @@ i {
     justify-content: flex;
     align-items: flex-start;
     gap: 4rem;
+  }
+
+  .description-button {
+    justify-content: flex-start;
+  }
+
+  .card-button.btn,
+  .description-button.btn {
+    width: auto;
+    /* faz com que o botão do "conecte-se comigo" fique com tamanho padronizado e não flexível, para deixar menor, mais bonito*/
   }
 }
 
