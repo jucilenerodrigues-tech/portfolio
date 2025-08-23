@@ -535,6 +535,70 @@ i {
 }
 
 
+/* Sobre */
+.accordion{
+  display:inline-block;
+  width: 100%;
+}
+.accordion-item{
+  display:inline-block;
+  width: 100%;
+}
+
+.accordion-header{
+  display: flex;
+  width: 100%;
+  padding: .75rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  text-align: start;
+  border: 1px solid var(--cor-borda);
+  cursor: pointer;
+  color: var(--cor-titulo);
+}
+
+.accordion-header:hover{
+  background: var(--cor-fundo-secundaria);
+  transition: all .3s ease-in-out;
+}
+
+
+.accordion-header span {
+  font-weight: 400;
+  font-family: var(--cor-titulo);
+  text-transform: uppercase;
+
+}
+
+.accordion-body{
+  display: none;
+  padding: 1.25rem;
+  color: var(--cor-titulo);
+  border: 1px solid var(--cor-borda);
+  gap: .6rem;
+  flex-direction: column;
+  align-items:flex-start;
+}
+
+
+.accordion-item.active .accordion-header{
+  background-color: var(--cor-fundo-secundaria);
+  transition: all .3s ease-in-out;
+}
+
+.accordion-item.active .accordion-body{
+  display: flex;
+}
+
+.accordion-item.active .bi-caret-down-fill{
+  transform: rotate(180deg);
+  transition: all .3s ease-in-out;
+}
+.bi-caret-down-fill{
+  transition: all .3s ease-in-out;
+}
+
 
 /* Medidas Responsivas */
 
