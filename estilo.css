@@ -682,7 +682,6 @@ i {
  border: none;
   }
 
-.form-contato input ::placeholder{}
 
 
 .form-contato textarea{
@@ -748,6 +747,10 @@ i {
   #home {
     padding-top: 6rem;
   }
+.contato-grid{
+  grid-template-columns: 1fr;
+}
+
 }
 
 @media (min-width: 768px) {
