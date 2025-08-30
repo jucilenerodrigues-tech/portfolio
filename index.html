@@ -386,11 +386,103 @@
       <!-- coluna 2 -->
     </div>
     </div>
+  </section>
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p>
+      Estou à disposição para colaborar em novos projetos e trocar ideias. Entre em contato comigo!
+    </p>
+    <!-- redes sociai -->
+      <ul class="menu menu-social">
+        <li>
+          <a href="https://github.com/jucilenerodrigues-tech/portfolio" class="menu-link" target="_blank">
+            <!-- target "_blank" serve para abrir o link em outra guia, para que o seu continue sendo visualizado-->
+            <i class="bi bi-github" social-icon></i>
+            <span>Hithub</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/i/flow/login?lang=pt" class="menu-link" target="_blank">
+            <i class="bi bi-twitter-x" social-icon></i>
+            <span>X (antigo Twitter)</span>
+
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" class="menu-link" target="_blank">
+            <i class="bi bi-instagram" social-icon></i>
+            <span>instagram</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/5511947160000" class="menu-link" target="_blank">
+            <i class="bi bi-whatsapp" social-icon></i>
+            <span>WhatsApp</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="contato-grid">
+        <!-- Formulario -->
+         <div class="contato-formulario">
+
+          <h3>Faça seu Cadastro</h3>
+          <!-- formulario -->
+          <form action="" method="post" class="form-email">
+            <!-- a tag "input" não tem fechamento, somente abertura -->
+            <!--  a tag "br" serve para quebra de página; o "required" é o item que classifica como campo de preenchimento obrigatorio-->
+            
+            <input type="text" name="nome" placeholder="Digite seu nome"  required> <br>
+            
+            <input type="email" name="email" placeholder="Digite seu melhor e-mail"   required> <br>
+
+            <input type="tel"" name="telefone" placeholder="celular"   > <br>
+
+            <!-- usuario -->
+            <input type="text" name="usuario*"  placeholder="usuário" required> <br>
+            <label for=""">*letras maiuscula, minuscula, numeros e @*/</label> <br>
+
+            <!-- senha -->
+            <input type="password" name="senha" placeholder="senha"  required> <br>
+           
+           <label for=""">você é:</label><br>
+           <label for=""">menino</label>
+           <input type="radio" name="genero" >
+           <label for=""">menina</label>  
+           <input type="radio" name="genero">  
+           <label for=""">menine</label>
+           <input type="radio" name="genero" > <br>
+
+           <label for=""">Cursos de interesse</label> <br>           
+              <input type="checkbox" name="" > <label for=""">Tecnologia</label> <br>            
+              <input type="checkbox" name=""> <label for=""">Marketing</label> <br>
+              <input type="checkbox" name=""> <label for=""">Negócios</label> <br>
+              <input type="checkbox" name="" > <label for=""">e-Commerce</label> <br>
+          
+          <textarea name="mensagem" rows="6" placeholder="Dúvidas, elogio, reclamação e outros"></textarea> <br>
+
+          <button type="submit" class="btn-primario">
+            <span>Enviar</span>
+            <i class="bi bi-send"> </i>
+
+
+          </button>
+
+                      
+
+
+
+
+          </form>
+         </div>
+
+      </div>
+
 
   </section>
 
   <footer></footer>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
