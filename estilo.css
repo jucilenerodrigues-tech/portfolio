@@ -22,7 +22,7 @@ League Spartan:
   --cor-fundo: #111217;
   --cor-fundo-secundaria: #28292e;
 
-  --cor-texto: #8f8f8f;
+  --cor-texto: #ececec;
 
   --cor-icone: #ffa927;
 
@@ -307,6 +307,8 @@ i {
 
 .btn-primario {
   border: 1px solid var(--cor-titulo);
+  background-color: transparent;
+  
 }
 
 .btn:hover {
@@ -679,7 +681,30 @@ i {
  border-radius: .5rem;
  border: none;
   }
- .contato-mapa{
+
+.form-contato input ::placeholder{}
+
+
+.form-contato textarea{
+    line-height: 1.5;
+  }
+
+.form-contato button{
+  align-items: center;
+  align-self: flex-start;
+  display: flex;
+  gap: .6rem;
+  border-radius: .5rem;
+  height: 2rem;
+  width: 5.5rem;
+  }
+
+.form-contato span{
+  color: var(--cor-icone);
+}
+
+
+.contato-mapa{
   width: 100%;
   height: 100%;
   min-width: 400px;
@@ -694,9 +719,26 @@ i {
     gap: 5rem;
 }
 
-.footer{
-  
+.footer p {
+  font-size: .85rem;
+  text-align: center;
+  padding: 1rem;  
 }
+
+.footer i {
+  font-size: 1rem;
+  color: orange;
+
+}
+.footer-link {
+  color: var(--cor-texto);
+}
+.footer-link:hover {
+  color: var(--cor-hover);
+}
+
+
+
 
 /* Medidas Responsivas */
 
