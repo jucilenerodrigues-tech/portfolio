@@ -424,64 +424,70 @@
 
       <div class="contato-grid">
         <!-- Formulario -->
-         <div class="contato-formulario">
+        <div class="contato-formulario">
 
-          <h3>Faça seu Cadastro</h3>
+          <h3>Fale Conosco</h3>
           <!-- formulario -->
-          <form action="" method="post" class="form-email">
+          <form action="https://formspree.io/f/mwpnovop" method="post" class="form-contato">
             <!-- a tag "input" não tem fechamento, somente abertura -->
             <!--  a tag "br" serve para quebra de página; o "required" é o item que classifica como campo de preenchimento obrigatorio-->
             
-            <input type="text" name="nome" placeholder="Digite seu nome"  required> <br>
+            <input type="text" name="nome" placeholder=" nome"  class="form-btn"> 
             
-            <input type="email" name="email" placeholder="Digite seu melhor e-mail"   required> <br>
+            <input type="email" name="email" placeholder="Digite seu melhor e-mail"  class="form-btn" required> 
 
-            <input type="tel"" name="telefone" placeholder="celular"   > <br>
+            <input type="tel"" name="telefone" id="telefone" placeholder="celular"  class="form-btn" > 
 
-            <!-- usuario -->
-            <input type="text" name="usuario*"  placeholder="usuário" required> <br>
-            <label for=""">*letras maiuscula, minuscula, numeros e @*/</label> <br>
-
-            <!-- senha -->
-            <input type="password" name="senha" placeholder="senha"  required> <br>
-           
-           <label for=""">você é:</label><br>
-           <label for=""">menino</label>
-           <input type="radio" name="genero" >
-           <label for=""">menina</label>  
-           <input type="radio" name="genero">  
-           <label for=""">menine</label>
-           <input type="radio" name="genero" > <br>
+                     
+           <!-- <label for="">você é:</label>
+           <label for="">menino</label>
+           <input type="radio" name="genero" value="menino">
+           <label for="">menina</label>  
+           <input type="radio" name="genero" value="menina"> 
+           <label for="Outros">Outros:</label> 
+              <select name="genero"> 
+                <option value="opcao1" >       </option>
+                <option value="opcao1" >opção 1</option>
+                <option value="opcao2" >opção 2</option>
+                <option value="opcao3" >opção 3</option>  
+              </select>     
 
            <label for=""">Cursos de interesse</label> <br>           
-              <input type="checkbox" name="" > <label for=""">Tecnologia</label> <br>            
-              <input type="checkbox" name=""> <label for=""">Marketing</label> <br>
-              <input type="checkbox" name=""> <label for=""">Negócios</label> <br>
-              <input type="checkbox" name="" > <label for=""">e-Commerce</label> <br>
+              <input type="checkbox" name="" class="form-btn"> <label for=""">Tecnologia</label>            
+              <input type="checkbox" name="" > <label for=""">Marketing</label> 
+              <input type="checkbox" name="" > <label for=""">Negócios</label> 
+              <input type="checkbox" name="" > <label for=""">e-Commerce</label>  -->
           
-          <textarea name="mensagem" rows="6" placeholder="Dúvidas, elogio, reclamação e outros"></textarea> <br>
+          <textarea name="mensagem" rows="6" placeholder="Dúvidas, elogio, reclamação e outros"></textarea> 
 
           <button type="submit" class="btn-primario">
             <span>Enviar</span>
             <i class="bi bi-send"> </i>
-
-
           </button>
 
-                      
+          </form> 
+      
+        </div>
 
-
-
-
-          </form>
-         </div>
-
+        <div class="contato-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d457.27035000822747!2d-46.73623242824182!3d-23.526646301450754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8b811e8e3a1%3A0xa7564bb4c78f41b3!2sSenai%20Vila%20Leopoldina%20-%20Mariano%20Ferraz!5e0!3m2!1spt-BR!2sbr!4v1756575227518!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>               
       </div>
-
-
   </section>
 
-  <footer></footer>
+<section id="contato" class="contato"></section>
+
+
+  <footer>
+    <p>
+      &copy; 2025. Portfolio desenvolvido para fins educativos com base nas aulas do
+      <a href="#" class="footer-link" target="_blank">Senai Leopoldina - SP </a>
+      <a href="https://github.com/jucilenerodrigues-tech" class="footer-link"> </a>
+
+    </p>
+
+
+  </footer>
   <script src="js/script.js"></script>
 </body>
 
